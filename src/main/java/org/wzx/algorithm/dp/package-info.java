@@ -15,6 +15,17 @@
  *
  * <p><em>千万不要看不起暴力解，动态规划问题最困难的就是写出这个暴力解，即状态转移方程。</em>只要写出暴力解，优化方法无非是用备忘录或者 DP table，再无奥妙可言。
  *
+ * <p>dp算法框架</p>
+ * <pre>{@code
+ * # 初始化 base case
+ * dp[0][0][...] = base
+ * # 进行状态转移
+ * for 状态1 in 状态1的所有取值：
+ *     for 状态2 in 状态2的所有取值：
+ *         for ...
+ *             dp[状态1][状态2][...] = 求最值(选择1，选择2...)
+ * }</pre>
+ *
  *  <p><a href="https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie">动态规划解题套路框架</a>
  * @author shawn
  * @create 2020/9/11
